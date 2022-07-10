@@ -26,10 +26,10 @@ public class NoticeController {
 	}
 	
 	// 공지사항 등록 페이지로 이동
-	@RequestMapping(value = "/admin/Notice/noticeRegistView")
+	@RequestMapping(value = "/admin/notice/noticeRegistView")
 	public ModelAndView noticeRegistView() {
 		System.out.println("Controller RegistView");
-		ModelAndView mav = new ModelAndView("/admin/Notice/noticeRegistView");
+		ModelAndView mav = new ModelAndView("/admin/notice/noticeRegistView");
 		
 		return mav;
 	}
@@ -39,7 +39,7 @@ public class NoticeController {
 	 * @param notice - 공지사항
 	 * @return
 	 */
-	@RequestMapping(value = "/admin/Notice/noticeRegist")
+	@RequestMapping(value = "/admin/notice/noticeRegist")
 	public String noticeRegist(Notice notice) {
 		System.out.println("Controller Regist");
 		

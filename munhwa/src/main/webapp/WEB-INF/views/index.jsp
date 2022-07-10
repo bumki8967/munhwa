@@ -89,7 +89,7 @@
 							<h4 class="m-0">
 								<strong> 무슨무슨 페이지 </strong>
 								<br />
-								<a href="${pageContext.request.contextPath }/admin/noticeRegistView"> 글 작성</a>
+								<a href="${pageContext.request.contextPath }/admin/notice/noticeRegistView"> 글 작성</a>
 							</h4>
 						</div>
 						<!-- /.col -->

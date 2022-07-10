@@ -10,7 +10,7 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		$("#regist_btn").click(function() {
-			$("#noticeRegistForm").attr('action', '/admin/noticeRegist');
+			$("#noticeRegistForm").attr('action', '/admin/notice/noticeRegist');
 			$("#noticeRegistForm").submit();
 			alert("공지등록이 완료되었습니다.");
 		});
