@@ -4,8 +4,9 @@ import java.util.Date;
 
 public class Notice {
 
-	private int artcl_Seq;
+	private Integer artcl_Seq;
 	private String title;
+	private String content;
 	private String writer;
 	private Date reg_date;
 	private Date edit_date;
@@ -14,11 +15,17 @@ public class Notice {
 	private String img_File_Nm;
 	private String img_Path;
 	
-	public int getArtcl_seq() {
+	public Integer getArtcl_Seq() {
 		return artcl_Seq;
 	}
-	public void setArtcl_seq(int artcl_Seq) {
+	public void setArtcl_Seq(Integer artcl_Seq) {
 		this.artcl_Seq = artcl_Seq;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
 	}
 	public String getTitle() {
 		return title;
