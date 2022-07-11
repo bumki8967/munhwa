@@ -12,18 +12,14 @@ public class NoticeController {
 	@Autowired
 	private NoticeService notice_Service;
 	
-//	@RequestMapping(value = "/")
-//	public ModelAndView index() {
-//		System.out.println("Controller 메인");
-//		ModelAndView mav = new ModelAndView("/admin/index");
-//		
-//		return mav;
-//	}
-	
-	@GetMapping(value = "/admin/main")
-	public void login() {
-
+	@RequestMapping(value = "/admin/index")
+	public ModelAndView index() {
+		System.out.println("Controller 메인");
+		ModelAndView mav = new ModelAndView("/admin/index");
+		
+		return mav;
 	}
+	
 	
 	// 공지사항 등록 페이지로 이동
 	@RequestMapping(value = "/admin/notice/noticeRegistView")
