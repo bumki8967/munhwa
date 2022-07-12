@@ -57,7 +57,7 @@
 					<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 						<li class="nav-item">
 							<a href="${pageContext.request.contextPath }/admin/notice/noticeList" class="nav-link active"> <i class="far fa-circle nav-icon"></i>
-								<p>게시판 관리자</p>
+								<p>Dashboard v1</p>
 							</a>
 						</li>
 
@@ -87,6 +87,51 @@
 				<div class="container-fluid">
 					<div class="row mb-2">
 						<div class="col-sm-6">
+							<h4 class="m-0">
+								<strong> 게시판 컨트롤러 </strong>
+								<br />
+								<a href="${pageContext.request.contextPath }/admin/notice/noticeRegistView"> 글 작성</a>
+							</h4>
+							<form action="" method="post" >
+								<table>
+									<colgroup>
+										<col class="">
+										<col class="">
+										<col class="">
+										<col class="">
+										<col class="">
+										<col class="">
+										<col class="">
+									</colgroup>
+									<thead>
+										<tr>
+											<th>번호</th>
+											<th>제목</th>
+											<th>내용</th>
+											<th>작성자</th>
+											<th>조회수</th>
+											<th>등록일</th>
+											<th>첨부파일</th>
+										</tr>
+									</thead>
+									<tbody>
+										<c:forEach items="${getNoticeList }" var="noticeList">
+											<tr>
+												<td><c:out value="${noticeList.artcl_Seq }"/></td>
+												<td><c:out value="${noticeList.title }"/></td>
+												<td><c:out value="${noticeList.content }"/></td>
+												<td><c:out value="${noticeList.writer }"/></td>
+												<td><c:out value="${noticeList.hit }"/></td>
+												<td><c:out value="${noticeList.reg_date }"/></td>
+												<td>
+													<c:if test="${noticeList.img_Path }">첨부파일存</c:if>
+												</td>
+											</tr>
+										</c:forEach>
+									</tbody>
+									
+								</table>
+							</form>
 						</div>
 						<!-- /.col -->
 					</div>
