@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page trimDirectiveWhitespaces="true"%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -220,12 +222,53 @@
 		</a>
 	</div>
 
+<<<<<<< HEAD
+			<!-- Sidebar -->
+			<div class="sidebar">
+				<!-- Sidebar Menu -->
+				<nav class="mt-2">
+					<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+						<li class="nav-item">
+							<a href="${pageContext.request.contextPath }/admin/notice/noticeList" class="nav-link active"> <i class="far fa-circle nav-icon"></i>
+								<p>게시판 관리자</p>
+							</a>
+						</li>
+=======
 	<div id="fullpage">
 		<div class="section" id="section0">
 			<!-- Swiper -->
 			<div class="swiper visu_slide">
 				<div class="swiper-wrapper">
+>>>>>>> branch 'master' of https://github.com/bumki8967/munhwa.git
 
+<<<<<<< HEAD
+						<li class="nav-item">
+							<a href="javascript:alert('준비중입니다');" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+								<p>Dashboard v2</p>
+							</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="javascript:alert('준비중입니다');" class="nav-link"> <i class="far fa-circle nav-icon"></i>
+								<p>Dashboard v3</p>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- /.sidebar-menu -->
+			</div>
+			<!-- /.sidebar -->
+		</aside>
+
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<!-- Content Header (Page header) -->
+			<br /><br /><br />
+			<div class="content-header">
+				<div class="container-fluid">
+					<div class="row mb-2">
+						<div class="col-sm-6">
+=======
 				<div class="swiper-slide slide1" style="background: url(${pageContext.request.contextPath }/assets/images/main1.jpg) no-repeat center center;">
 					<div class="wrap">
 						<div class="shadow"></div>
@@ -242,6 +285,7 @@
 							<a href="${pageContext.request.contextPath }/views/services/foundation/foundation_3.jsp">
 								재단소개
 							</a>
+>>>>>>> branch 'master' of https://github.com/bumki8967/munhwa.git
 						</div>
 					</div>
 				</div>

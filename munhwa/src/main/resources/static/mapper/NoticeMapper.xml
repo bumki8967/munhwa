@@ -36,4 +36,9 @@
        		
         )
    	</insert>
+   	
+   	<select id="getNoticeList" resultMap="Notice">
+   		SELECT * FROM munhwa_notice_artcl
+   	</select>
+   	
 </mapper>
