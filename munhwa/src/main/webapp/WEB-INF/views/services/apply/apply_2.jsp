@@ -56,20 +56,20 @@
                 <h2>신청/참여</h2>
                 <ul>
                     <li>
-                        <a href="./apply.jsp">
+                        <a href="${pageContext.request.contextPath }/services/apply/apply.jsp">
                             <h5>경인지역 문화예술<br/> 
                                 창작활동 지원사업</h5>
                             <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
                     </li>
                     <li class="on">
-                        <a href="./apply_2.jsp">
+                        <a href="${pageContext.request.contextPath }/services/apply/apply_2.jsp">
                             <h5>가천그림그리기대회</h5>
                             <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
                     </li>
                     <li>
-                        <a href="./apply_3.jsp">
+                        <a href="${pageContext.request.contextPath }/services/apply/apply_3.jsp">
                             <h5>심청효행대상</h5>
                             <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
@@ -280,7 +280,7 @@
                         </li>                                                                
                     </ul>
                     <div class="apply_btn">
-                        <a href="./apply_2_detail.jsp">
+                        <a href="${pageContext.request.contextPath }/services/apply/apply_2_detail.jsp">
                             가천그림그리기대회 접수하기
                         </a>
                     </div>                    

@@ -14,10 +14,10 @@
 	<meta name="Resource-type" content="Document" />
 
 
-	<link rel="stylesheet" type="text/css" href="../assets/css/reset.css" /> 
-	<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/sub.css">
-	<link rel="stylesheet" type="text/css" href="../assets/swiper/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/reset.css" /> 
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/sub.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/swiper/css/swiper.css">
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -28,8 +28,8 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	
-	<script type="text/javascript" src="../assets/swiper/js/swiper.js"></script>
-	<script type="text/javascript" src="../assets//scripts/script.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath }/assets/swiper/js/swiper.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath }/assets/scripts/script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -44,7 +44,7 @@
 		<!-- top 영역 끝 -->
 	</header>
 	
-    <div class="sub_visu" style="background: url(../assets/images/apply_bg2.png) no-repeat center center;">
+    <div class="sub_visu" style="background: url(${pageContext.request.contextPath }/assets/images/apply_bg2.png) no-repeat center center;">
         <div class="wrap">
             <h2>신청/참여</h2>
             <div class="white_box"></div>
@@ -56,22 +56,22 @@
                 <h2>신청/참여</h2>
                 <ul>
                     <li>
-                        <a href="./apply.html">
+                        <a href="${pageContext.request.contextPath }/services/apply/apply.jsp">
                             <h5>경인지역 문화예술<br/> 
                                 창작활동 지원사업</h5>
-                            <i><img src="../assets/images/dot.png" alt=""></i>
+                            <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
                     </li>
                     <li>
-                        <a href="./apply_2.html">
+                        <a href="${pageContext.request.contextPath }/services/apply/apply_2.jsp">
                             <h5>가천그림그리기대회</h5>
-                            <i><img src="../assets/images/dot.png" alt=""></i>
+                            <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
                     </li>
                     <li class="on">
-                        <a href="./apply_3.html">
+                        <a href="${pageContext.request.contextPath }/services/apply/apply_3.jsp">
                             <h5>심청효행대상</h5>
-                            <i><img src="../assets/images/dot.png" alt=""></i>
+                            <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
                     </li>
                 </ul>
@@ -80,10 +80,10 @@
                 <div class="head_tit">
                     <h2>심청효행상</h2>
                     <ul class="page_info">
-                        <li><img src="../assets/images/i_house.png" alt=""></li>
-                        <li><img src="../assets/images/i_link_g.png" alt=""></li>
+                        <li><img src="${pageContext.request.contextPath }/assets/images/i_house.png" alt=""></li>
+                        <li><img src="${pageContext.request.contextPath }/assets/images/i_link_g.png" alt=""></li>
                         <li>신청/참여</li>
-                        <li><img src="../assets/images/i_link_g.png" alt=""></li>
+                        <li><img src="${pageContext.request.contextPath }/assets/images/i_link_g.png" alt=""></li>
                         <li>심청효행대상 신청 </li>
                     </ul>
                 </div>
@@ -92,7 +92,7 @@
                     <div class="grey"></div>
                 </div>
                 <div class="form_download">
-                    <h5><i><img src="../assets/images/i_write.png" alt=""></i>본 신청양식 다운로드</h5>
+                    <h5><i><img src="${pageContext.request.contextPath }/assets/images/i_write.png" alt=""></i>본 신청양식 다운로드</h5>
                     <a href="" download="">
                         <button class="button">양식 다운로드</button>
                     </a>
@@ -119,11 +119,11 @@
                                 <ul class="list_wrap">
                                     <li>
                                         <input type="radio" name="calendar" id="calendar1" checked>
-                                        <label for="calendar1"><i><img src="../assets/images/i_check.png" alt=""></i>양력</label>
+                                        <label for="calendar1"><i><img src="${pageContext.request.contextPath }/assets/images/i_check.png" alt=""></i>양력</label>
                                     </li>
                                     <li>
                                         <input type="radio" name="calendar" id="calendar2">
-                                        <label for="calendar2"><i><img src="../assets/images/i_check.png" alt=""></i>음력</label>
+                                        <label for="calendar2"><i><img src="${pageContext.request.contextPath }/assets/images/i_check.png" alt=""></i>음력</label>
                                     </li>
                                 </ul>
                             </div>
@@ -219,7 +219,7 @@
                                 <div class="input_wrap">
                                     <h5>증명사진 첨부<span>*</span></h5>
                                     <div class="picture">  
-                                        <div class="img" style="background: url(../assets/images/default_pic.png); background-size: cover;"></div>
+                                        <div class="img" style="background: url(${pageContext.request.contextPath }/assets/images/default_pic.png); background-size: cover;"></div>
                                         <input type="file" id="file1">
                                         <label for="file1">
                                             사진선택
@@ -286,11 +286,11 @@
                             <ul class="list_wrap">
                                 <li>
                                     <input type="radio" name="agree" id="agree1" checked="">
-                                    <label for="agree1"><i><img src="../assets/images/i_check.png" alt=""></i>동의합니다.</label>
+                                    <label for="agree1"><i><img src="${pageContext.request.contextPath }/assets/images/i_check.png" alt=""></i>동의합니다.</label>
                                 </li>
                                 <li>
                                     <input type="radio" name="agree" id="agree2">
-                                    <label for="agree2"><i><img src="../assets/images/i_check.png" alt=""></i>동의하지 않습니다.</label>
+                                    <label for="agree2"><i><img src="${pageContext.request.contextPath }/assets/images/i_check.png" alt=""></i>동의하지 않습니다.</label>
                                 </li>
                             </ul>                            
                         </div>

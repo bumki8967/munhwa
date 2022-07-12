@@ -1062,9 +1062,9 @@
         </div>
     </div>
 
-	<!-- fix_con 영역 시작 -->
+	<!-- fixed_con 영역 시작 -->
 	<c:import url="${pageContext.request.contextPath }/assets/include/fixed_con.jsp" />
-	<!-- fix_con 영역 끝 -->
+	<!-- fixed_con 영역 끝 -->
 
 	<footer>
 		<!-- footer 시작 -->

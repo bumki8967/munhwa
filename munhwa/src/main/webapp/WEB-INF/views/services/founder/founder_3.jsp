@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page trimDirectiveWhitespaces="true"%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -12,10 +14,10 @@
 	<meta name="Resource-type" content="Document" />
 
 
-	<link rel="stylesheet" type="text/css" href="../assets/css/reset.css" /> 
-	<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/sub.css">
-	<link rel="stylesheet" type="text/css" href="../assets/swiper/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/reset.css" /> 
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/sub.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/swiper/css/swiper.css">
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -26,8 +28,8 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	
-	<script type="text/javascript" src="../assets/swiper/js/swiper.js"></script>
-	<script type="text/javascript" src="../assets//scripts/script.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath }/assets/swiper/js/swiper.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath }/assets/scripts/script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -37,130 +39,12 @@
 <body class="Pretendard">
 
 	<header>
-		<div class="wrap">
-			<div class="logo">
-				<a href="../index.html">
-					<img src="../assets/images/logo.png" alt="">
-				</a>
-			</div>
-			<nav class="gnb pc_only">
-				<ul>
-					<li class="on">
-						<a href="../services/founder_2.html">설립자 소개</a>
-					</li>
-					<li>
-						<a href="../services/foundation.html">재단소개</a>
-					</li>
-					<li>
-						<a href="../services/business.html">재단사업</a>
-					</li>
-					<li>
-						<a href="../services/news.html">재단소식</a>
-					</li>
-					<li>
-						<a href="../services/reference.html">자료실</a>
-					</li>
-					<li>
-						<a href="../services/apply.html">신청/참여</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="gnb_right">
-				<ul class="pc_only">
-					<li>
-						<a href="../index.html">
-							<img class="one" src="../assets/images/i_home.png" alt="">
-							<img class="two" src="../assets/images/i_home_w.png" alt="">
-						</a>
-					</li>
-					<li>|</li>
-					<li>
-						<img class="one" src="../assets/images/i_search.png" alt="">
-						<img class="two" src="../assets/images/i_search_w.png" alt="">
-					</li>
-				</ul>
-				<ul class="mo_only">
-					<li>
-						<div class="ico toggle-side-bar-btn menu_btn">
-							<div></div>
-							<div></div>
-							<div></div>
-						</div> 
-						<div class="menu">
-							<div class="menu_close menu_btn">
-								<img src="../assets/images/close.png" alt="">
-							</div>
-							<div class="menu_logo">
-								<a href="../index.html">
-									<img src="../assets/images/logo.png" alt="">
-								</a>
-							</div>
-							<div class="search">
-								<input type="text" placeholder="제품을 검색해보세요.">
-								<button><img src="../assets/images/i_search.png" alt=""></button>
-							</div>
-							<!-- <ul class="lnb"> 
-								<li><a href="../services/login.html">로그인</a></li>
-								<li><a href="../services/agree_term.html">회원가입</a></li>
-								<li><a href="../services/my.html">마이페이지</a></li>
-								<li><a href="../services/notice.html">공지사항</a></li>
-								<li><a href="../services/faq.html">FAQ</a></li>
-								<li><a href="../services/quick_reserv.html">예약신청</a></li>
-							</ul> -->
-				
-							<div class="menu_list">
-								<div id="Accordion_wrap">
-									<div class="que on">
-										<a href="../services/founder_2.html">설립자 소개</a>
-									</div>
-									<div class="anw">
-										<span><a href="#"></a></span>
-										<span><a href="#"></a></span>
-									</div>
-									<div class="que">
-										<a href="../services/foundation.html">재단소개</a>
-									</div>
-									<div class="anw">
-										<span><a href="#"></a></span>
-										<span><a href="#"></a></span>
-									</div>
-									<div class="que">
-										<a href="../services/business.html">재단사업</a>
-									</div>
-									<div class="anw">
-										<span><a href="#"></a></span>
-										<span><a href="#"></a></span>
-									</div>
-									<div class="que">
-										<a href="../services/news.html">재단소식</a>
-									</div>
-									<div class="anw">
-										<span><a href="#"></a></span>
-										<span><a href="#"></a></span>
-									</div>
-									<div class="que">
-										<a href="../services/reference.html">자료실</a>
-									</div>
-									<div class="anw">
-										<span><a href="#"></a></span>
-										<span><a href="#"></a></span>
-									</div>
-									<div class="que">
-										<a href="../services/apply.html">신청/참여</a>
-									</div>
-									<div class="anw">
-										<span><a href="#"></a></span>
-										<span><a href="#"></a></span>
-									</div>
-								  </div>
-							</div>
-						</div>						
-					</li>
-				</ul>
-			</div>
-		</div>
+		<!-- top 영역 시작 -->
+		<c:import url="${pageContext.request.contextPath }/assets/include/topbar.jsp" />
+		<!-- top 영역 끝 -->
 	</header>
-    <div class="sub_visu" style="background: url(../assets/images/founder_bg.png) no-repeat center center;">
+	
+    <div class="sub_visu" style="background: url(${pageContext.request.contextPath }/assets/images/founder_bg.png) no-repeat center center;">
         <div class="wrap">
             <h2>설립자 소개</h2>
             <div class="white_box"></div>
@@ -172,27 +56,27 @@
                 <h2>설립자 소개</h2>
                 <ul>
                     <li>
-                        <a href="./founder.html">
+                        <a href="${pageContext.request.contextPath }/services/founder/founder.jsp">
                             <h5>인사말씀</h5>
-                            <i><img src="../assets/images/dot.png" alt=""></i>
+                            <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
                     </li>
                     <li>
-                        <a href="./founder_2.html">
+                        <a href="${pageContext.request.contextPath }/services/founder/founder_2.jsp">
                             <h5>프로필</h5>
-                            <i><img src="../assets/images/dot.png" alt=""></i>
+                            <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
                     </li>
                     <li class="on">
-                        <a href="./founder_3.html">
+                        <a href="${pageContext.request.contextPath }/services/founder/founder_3.jsp">
                             <h5>삶의 철학</h5>
-                            <i><img src="../assets/images/dot.png" alt=""></i>
+                            <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
                     </li>
                     <li>
-                        <a href="./founder_4.html">
+                        <a href="${pageContext.request.contextPath }/services/founder/founder_4.jsp">
                             <h5>저서</h5>
-                            <i><img src="../assets/images/dot.png" alt=""></i>
+                            <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
                     </li>
                 </ul>
@@ -201,10 +85,10 @@
                 <div class="head_tit">
                     <h2>삶의 철학</h2>
                     <ul class="page_info">
-                        <li><img src="../assets/images/i_house.png" alt=""></li>
-                        <li><img src="../assets/images/i_link_g.png" alt=""></li>
+                        <li><img src="${pageContext.request.contextPath }/assets/images/i_house.png" alt=""></li>
+                        <li><img src="${pageContext.request.contextPath }/assets/images/i_link_g.png" alt=""></li>
                         <li>설립자소개</li>
-                        <li><img src="../assets/images/i_link_g.png" alt=""></li>
+                        <li><img src="${pageContext.request.contextPath }/assets/images/i_link_g.png" alt=""></li>
                         <li>삶의 철학</li>
                     </ul>
                 </div>
@@ -218,7 +102,7 @@
                         <li>
                             <div class="con">
                                 <h2>봉사철학</h2>
-                                <i><img src="../assets/images/i_green.png" alt=""></i>
+                                <i><img src="${pageContext.request.contextPath }/assets/images/i_green.png" alt=""></i>
                                 <h5>베푸는 것은 희생함으로써 잃는 것이 아니라 새로운 희망을 잉태한다.</h5>
                                 <p>
                                     사람은 눈을 감는 순간까지 하늘을 우러러 한 점 부끄러움이 없도록 노력해야 하고, 타인을 위한 봉사도 멈춤이 없어야 한다.<br/>
@@ -233,7 +117,7 @@
                         <li>
                             <div class="con">
                                 <h2>의료철학</h2>
-                                <i><img src="../assets/images/i_sky.png" alt=""></i>
+                                <i><img src="${pageContext.request.contextPath }/assets/images/i_sky.png" alt=""></i>
                                 <h5>베푸는 것은 희생함으로써 잃는 것이 아니라 새로운 희망을 잉태한다.</h5>
                                 <p>
                                     가족과 이웃, 동포와 인류를 향한 생명존엄의 정신은 내가 실현하고자 하는 인술(仁術)의 바탕이다.<br/>
@@ -247,7 +131,7 @@
                         <li>
                             <div class="con">
                                 <h2>교육철학</h2>
-                                <i><img src="../assets/images/i_blue.png" alt=""></i>
+                                <i><img src="${pageContext.request.contextPath }/assets/images/i_blue.png" alt=""></i>
                                 <h5>‘의료를 통한 교육, 교육을 통한 의료’ 라는 큰 뜻을 실현하고자 한다.</h5>
                                 <p>
                                     의료가 육체적 건강을 되찾아 주는 행위라면 교육은 정신적 건강을 증진시켜 주는 행위라고 믿는다. 그 교육의 정수(精髓)는<br class="pc_only"/>
@@ -262,7 +146,7 @@
                         <li>
                             <div class="con">
                                 <h2>문화철학</h2>
-                                <i><img src="../assets/images/i_tomato.png" alt=""></i>
+                                <i><img src="${pageContext.request.contextPath }/assets/images/i_tomato.png" alt=""></i>
                                 <h5>21세기는 ‘문화의 세기’다.</h5>
                                 <p>
                                     한 마디로 ‘문화’는 21세기 정보화 시대에 삶의 질을 좌우하는 핵심 키워드가 될 것이다.<br/>
@@ -277,7 +161,7 @@
                         <li>
                             <div class="con">
                                 <h2>경영철학</h2>
-                                <i><img src="../assets/images/i_purple.png" alt=""></i>
+                                <i><img src="${pageContext.request.contextPath }/assets/images/i_purple.png" alt=""></i>
                                 <h5>‘가천길재단’은 모두 비수익, 비영리 공익사업이다.</h5>
                                 <p>
                                     나의 경영철학은 사심(私心)을 버리는 데서 출발한다.<br/>
@@ -295,95 +179,16 @@
               
             </div>
         </div>
-
     </div>
-	<div class="fixed_con">
-		<ul>
-			<li>
-				<a href="../index.html">
-					<i><img src="../assets/images/i_main.png" alt=""></i>
-					<p>메인</p>
-				</a>
-			</li>
-			<li>
-				<a href="../services/news_2.html">
-					<i><img src="../assets/images/i_news.png" alt=""></i>
-					<p>뉴스레터</p>
-				</a>
-			</li>
-			<li>
-				<a href="../services/apply.html">
-					<i><img src="../assets/images/i_apply.png" alt=""></i>
-					<p>신청·참여</p>
-				</a>
-			</li>
-			<li>
-				<a href="#page1">
-					<i><img src="../assets/images/i_top.png" alt=""></i>
-					<p>TOP</p>
-				</a>
-			</li>
-		</ul>
-	</div>
 
+	<!-- fixed_con 영역 시작 -->
+	<c:import url="${pageContext.request.contextPath }/assets/include/fixed_con.jsp" />
+	<!-- fixed_con 영역 끝 -->
 
-
-    <footer>
-        <div class="footer_top">
-            <div class="wrap">
-                <div class="line_hidden"></div>
-                <!-- Swiper -->
-                <div class="swiper footer_slide">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="slide_img">
-                                <img src="../assets/images/footer_img1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide_img">
-                                <img src="../assets/images/footer_img2.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide_img">
-                                <img src="../assets/images/footer_img3.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide_img">
-                                <img src="../assets/images/footer_img4.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next swiper-button-next3"></div>
-                    <div class="swiper-button-prev swiper-button-prev3"></div>
-                </div>	
-            </div>
-        </div>
-        <div class="footer_bottom">
-            <div class="wrap">
-                <div class="left">
-                    <img src="../assets/images/footer_logo.png" alt="">
-                    <ul class="list">
-                        <li>인천광역시 연수구 청량로 102번길 40-9(옥련동)</li>
-                        <li>|</li>
-                        <li>전화번호   032)833-4168</li>
-                        <li>|</li>
-                        <li>팩스번호   032)833-4169</li>
-                    </ul>
-                    <div class="copyright">
-                        Copyright (c) Gachon Cultural Foundation. All Rights Reserved 2022
-                    </div>
-                </div>
-                <div class="right">
-                    <select name="" id="" class="map">
-                        <option value="">FAMILY SITE</option>
-                        <option value="http://www.naver.com">네이버</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </footer>    
+	<footer>
+		<!-- footer 시작 -->
+		<c:import url="${pageContext.request.contextPath }/assets/include/footer.jsp" />
+		<!-- // footer 끝 -->
+	</footer>   
 </body>
 </html>

@@ -14,10 +14,10 @@
 	<meta name="Resource-type" content="Document" />
 
 
-	<link rel="stylesheet" type="text/css" href="../assets/css/reset.css" /> 
-	<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/sub.css">
-	<link rel="stylesheet" type="text/css" href="../assets/swiper/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/reset.css" /> 
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/sub.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/swiper/css/swiper.css">
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -28,8 +28,8 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	
-	<script type="text/javascript" src="../assets/swiper/js/swiper.js"></script>
-	<script type="text/javascript" src="../assets//scripts/script.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath }/assets/swiper/js/swiper.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath }/assets/scripts/script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -44,7 +44,7 @@
 		<!-- top 영역 끝 -->
 	</header>
 	
-    <div class="sub_visu" style="background: url(../assets/images/apply_bg2.png) no-repeat center center;">
+    <div class="sub_visu" style="background: url(${pageContext.request.contextPath }/assets/images/apply_bg2.png) no-repeat center center;">
         <div class="wrap">
             <h2>신청/참여</h2>
             <div class="white_box"></div>
@@ -56,22 +56,22 @@
                 <h2>신청/참여</h2>
                 <ul>
                     <li>
-                        <a href="./apply.html">
+                        <a href="${pageContext.request.contextPath }/services/apply/apply.jsp">
                             <h5>경인지역 문화예술<br/> 
                                 창작활동 지원사업</h5>
-                            <i><img src="../assets/images/dot.png" alt=""></i>
+                            <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
                     </li>
                     <li>
-                        <a href="./apply_2.html">
+                        <a href="${pageContext.request.contextPath }/services/apply/apply_2.jsp">
                             <h5>가천그림그리기대회</h5>
-                            <i><img src="../assets/images/dot.png" alt=""></i>
+                            <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
                     </li>
                     <li class="on">
-                        <a href="./apply_3.html">
+                        <a href="${pageContext.request.contextPath }/services/apply/apply_3.jsp">
                             <h5>심청효행대상</h5>
-                            <i><img src="../assets/images/dot.png" alt=""></i>
+                            <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
                     </li>
                 </ul>
@@ -80,10 +80,10 @@
                 <div class="head_tit">
                     <h2>심청효행대상</h2>
                     <ul class="page_info">
-                        <li><img src="../assets/images/i_house.png" alt=""></li>
-                        <li><img src="../assets/images/i_link_g.png" alt=""></li>
+                        <li><img src="${pageContext.request.contextPath }/assets/images/i_house.png" alt=""></li>
+                        <li><img src="${pageContext.request.contextPath }/assets/images/i_link_g.png" alt=""></li>
                         <li>신청/참여</li>
-                        <li><img src="../assets/images/i_link_g.png" alt=""></li>
+                        <li><img src="${pageContext.request.contextPath }/assets/images/i_link_g.png" alt=""></li>
                         <li>심청효행대상</li>
                     </ul>
                 </div>
@@ -106,7 +106,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     시상 부문 (시상 명칭 및 수상자 수, 장학금 등은 변동 가능)
                                 </h3>
                             </div>
@@ -121,7 +121,7 @@
                                             </th>
                                             <td>
                                                 <div class="medal">
-                                                    <h5><i><img src="../assets/images/i_medal_g.png" alt=""></i>대상(1명)</h5>
+                                                    <h5><i><img src="${pageContext.request.contextPath }/assets/images/i_medal_g.png" alt=""></i>대상(1명)</h5>
                                                     <p>장학금 1천만원 (부상 및 특전)</p>
                                                 </div>
                                             </td>
@@ -129,7 +129,7 @@
                                         <tr>
                                             <td>
                                                 <div class="medal">
-                                                    <h5><i><img src="../assets/images/i_medal_s.png" alt=""></i>본상(2명)</h5>
+                                                    <h5><i><img src="${pageContext.request.contextPath }/assets/images/i_medal_s.png" alt=""></i>본상(2명)</h5>
                                                     <p>장학금 5백만원 (부상 및 특전)</p>
                                                 </div>
                                             </td>
@@ -137,7 +137,7 @@
                                         <tr>
                                             <td>
                                                 <div class="medal">
-                                                    <h5><i><img src="../assets/images/i_medal_b.png" alt=""></i>특별상(6명)</h5>
+                                                    <h5><i><img src="${pageContext.request.contextPath }/assets/images/i_medal_b.png" alt=""></i>특별상(6명)</h5>
                                                     <p>장학금 3백만원 (부상 및 특전)</p>
                                                 </div>
                                             </td>
@@ -155,7 +155,7 @@
                                             </th>
                                             <td>
                                                 <div class="medal">
-                                                    <h5><i><img src="../assets/images/i_medal_g.png" alt=""></i>대상(1명)</h5>
+                                                    <h5><i><img src="${pageContext.request.contextPath }/assets/images/i_medal_g.png" alt=""></i>대상(1명)</h5>
                                                     <p>장학금 1천만원 (부상 및 특전)</p>
                                                 </div>
                                             </td>
@@ -163,7 +163,7 @@
                                         <tr>
                                             <td>
                                                 <div class="medal">
-                                                    <h5><i><img src="../assets/images/i_medal_s.png" alt=""></i>본상(2명)</h5>
+                                                    <h5><i><img src="${pageContext.request.contextPath }/assets/images/i_medal_s.png" alt=""></i>본상(2명)</h5>
                                                     <p>장학금 5백만원 (부상 및 특전)</p>
                                                 </div>
                                             </td>
@@ -181,7 +181,7 @@
                                             </th>
                                             <td>
                                                 <div class="medal medal2">
-                                                    <h5><i><img src="../assets/images/i_medal_g.png" alt=""></i>대상(1명 혹은 단체)</h5>
+                                                    <h5><i><img src="${pageContext.request.contextPath }/assets/images/i_medal_g.png" alt=""></i>대상(1명 혹은 단체)</h5>
                                                     <p>장학금 1천만원 (부상 및 특전)</p>
                                                 </div>
                                             </td>
@@ -189,7 +189,7 @@
                                         <tr>
                                             <td>
                                                 <div class="medal medal2">
-                                                    <h5><i><img src="../assets/images/i_medal_s.png" alt=""></i>본상(2명 혹은 단체)</h5>
+                                                    <h5><i><img src="${pageContext.request.contextPath }/assets/images/i_medal_s.png" alt=""></i>본상(2명 혹은 단체)</h5>
                                                     <p>장학금 5백만원 (부상 및 특전)</p>
                                                 </div>
                                             </td>
@@ -201,7 +201,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     추천인 자격
                                 </h3>
                             </div>
@@ -230,7 +230,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     공모 자격 / 대상
                                 </h3>
                             </div>
@@ -300,7 +300,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     제출서류
                                 </h3>
                             </div>
@@ -379,7 +379,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     공모 접수
                                 </h3>
                             </div>
@@ -431,7 +431,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     심사방법
                                 </h3>
                             </div>
@@ -441,7 +441,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     수상자 발표 및 시상
                                 </h3>
                             </div>
@@ -485,7 +485,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     수상자 및 수상자 배출기관 특전
                                 </h3>
                             </div>
@@ -518,7 +518,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     기타
                                 </h3>
                             </div>
@@ -528,7 +528,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     행사 주체
                                 </h3>
                             </div>
@@ -575,17 +575,17 @@
                     <div class="btn_list">
                         <ul>
                             <li>
-                                <a href="./apply_3_detail_1.html">
+                                <a href="${pageContext.request.contextPath }/services/apply/apply_3_detail_1.jsp">
                                     심청효행상 신청
                                 </a>
                             </li>
                             <li>
-                                <a href="./apply_3_detail_2.html">
+                                <a href="${pageContext.request.contextPath }/services/apply/apply_3_detail_2.jsp">
                                     다문화효부상 신청
                                 </a>
                             </li>
                             <li>
-                                <a href="./apply_3_detail_3.html">
+                                <a href="${pageContext.request.contextPath }/services/apply/apply_3_detail_3.jsp">
                                     다문화도우미상 신청
                                 </a>
                             </li>

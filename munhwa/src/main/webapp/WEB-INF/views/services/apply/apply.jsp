@@ -14,10 +14,10 @@
 	<meta name="Resource-type" content="Document" />
 
 
-	<link rel="stylesheet" type="text/css" href="../assets/css/reset.css" /> 
-	<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/sub.css">
-	<link rel="stylesheet" type="text/css" href="../assets/swiper/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/reset.css" /> 
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/css/sub.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/assets/swiper/css/swiper.css">
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -28,8 +28,8 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	
-	<script type="text/javascript" src="../assets/swiper/js/swiper.js"></script>
-	<script type="text/javascript" src="../assets//scripts/script.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath }/assets/swiper/js/swiper.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath }/assets/scripts/script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -44,7 +44,7 @@
 		<!-- top 영역 끝 -->
 	</header>
 	
-    <div class="sub_visu" style="background: url(../assets/images/apply_bg1.png) no-repeat center center;">
+    <div class="sub_visu" style="background: url(${pageContext.request.contextPath }/assets/images/apply_bg1.png) no-repeat center center;">
         <div class="wrap">
             <h2>신청/참여</h2>
             <div class="white_box"></div>
@@ -56,22 +56,22 @@
                 <h2>신청/참여</h2>
                 <ul>
                     <li class="on">
-                        <a href="./apply.html">
+                        <a href="${pageContext.request.contextPath }/services/apply/apply.jsp">
                             <h5>경인지역 문화예술<br/> 
                                 창작활동 지원사업</h5>
-                            <i><img src="../assets/images/dot.png" alt=""></i>
+                            <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
                     </li>
                     <li>
-                        <a href="./apply_2.html">
+                        <a href="${pageContext.request.contextPath }/services/apply/apply_2.jsp">
                             <h5>가천그림그리기대회</h5>
-                            <i><img src="../assets/images/dot.png" alt=""></i>
+                            <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
                     </li>
                     <li>
-                        <a href="./apply_3.html">
+                        <a href="${pageContext.request.contextPath }/services/apply/apply_3.jsp">
                             <h5>심청효행대상</h5>
-                            <i><img src="../assets/images/dot.png" alt=""></i>
+                            <i><img src="${pageContext.request.contextPath }/assets/images/dot.png" alt=""></i>
                         </a>
                     </li>
                 </ul>
@@ -80,10 +80,10 @@
                 <div class="head_tit">
                     <h2>경인지역 문화예술 창작활동 지원사업</h2>
                     <ul class="page_info">
-                        <li><img src="../assets/images/i_house.png" alt=""></li>
-                        <li><img src="../assets/images/i_link_g.png" alt=""></li>
+                        <li><img src="${pageContext.request.contextPath }/assets/images/i_house.png" alt=""></li>
+                        <li><img src="${pageContext.request.contextPath }/assets/images/i_link_g.png" alt=""></li>
                         <li>신청/참여</li>
-                        <li><img src="../assets/images/i_link_g.png" alt=""></li>
+                        <li><img src="${pageContext.request.contextPath }/assets/images/i_link_g.png" alt=""></li>
                         <li>경인지역 문화예술 창작활동 지원사업</li>
                     </ul>
                 </div>
@@ -104,7 +104,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     신청자격
                                 </h3>
                             </div>
@@ -117,7 +117,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     지원금액
                                 </h3>
                             </div>
@@ -129,7 +129,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     제출서류
                                 </h3>
                             </div>
@@ -145,7 +145,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     신청접수
                                 </h3>
                             </div>
@@ -199,7 +199,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     지원 일정
                                 </h3>
                             </div>
@@ -244,7 +244,7 @@
                         <li>
                             <div class="title">
                                 <h3>
-                                    <i><img src="../assets/images/i_circle.png" alt=""></i>
+                                    <i><img src="${pageContext.request.contextPath }/assets/images/i_circle.png" alt=""></i>
                                     유의사항
                                 </h3>
                             </div>
@@ -260,9 +260,9 @@
                                 </h5>
                                 <ul>
                                     <li>가천문화재단 홈페이지</li>
-                                    <li><img src="../assets/images/info_next.png" alt=""></li>
+                                    <li><img src="${pageContext.request.contextPath }/assets/images/info_next.png" alt=""></li>
                                     <li>자료실</li>
-                                    <li><img src="../assets/images/info_next.png" alt=""></li>
+                                    <li><img src="${pageContext.request.contextPath }/assets/images/info_next.png" alt=""></li>
                                     <li>행사자료 이용</li>
                                 </ul>
                             </div>

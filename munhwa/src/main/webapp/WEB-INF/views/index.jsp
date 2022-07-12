@@ -99,7 +99,7 @@
 								인류문화발전과 복지사회 창달에 이바지함을 <br/>
 								목적으로 합니다		
 							</h4>
-							<a href="${pageContext.request.contextPath }/services/foundation_3.jsp">
+							<a href="${pageContext.request.contextPath }/services/foundation/foundation_3.jsp">
 								재단소개
 							</a>
 						</div>
@@ -273,7 +273,7 @@
 						<div class="con">
 							<h3>가천 이길여 산부인과 기념관</h3>
 							<ul>
-								<li><a href="${pageContext.request.contextPath }/services/business_6.jsp">소개</a></li>
+								<li><a href="${pageContext.request.contextPath }/services/business/business_6.jsp">소개</a></li>
 								<li><a href="http://www.gachon1958.com/" target="_blank">바로가기</a></li>
 								<li><a href="http://easyvr.co.kr/gachon2/index.html" target="_blank">★ VR관람</a></li>
 							</ul>
@@ -465,7 +465,7 @@
 						 <div class="con_top">
 							<div class="con_head">
 								<h4>공지사항</h4>
-								<a href="${pageContext.request.contextPath }/services/news.jsp"><img src="${pageContext.request.contextPath }/assets/images/i_plus.png" alt=""></a>
+								<a href="${pageContext.request.contextPath }/services/news/news.jsp"><img src="${pageContext.request.contextPath }/assets/images/i_plus.png" alt=""></a>
 							</div>
 							<div class="notice_list">
 								<a href="${pageContext.request.contextPath }/services/news/news_detail.jsp">
