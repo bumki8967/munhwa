@@ -59,157 +59,15 @@
 <body class="Pretendard">
 
 	<header>
-		<div class="wrap">
-			<div class="logo">
-				<a href="${pageContext.request.contextPath }/index.jsp">
-					<img src="${pageContext.request.contextPath }/assets/images/logo.png" alt="">
-				</a>
-			</div>
-			<nav class="gnb pc_only">
-				<ul>
-					<li>
-						<a href="${pageContext.request.contextPath }/views/services/founder/founder_2.jsp">설립자 소개</a>
-					</li>
-					<li>
-						<a href="${pageContext.request.contextPath }/views/services/foundation/foundation.jsp">재단소개</a>
-					</li>
-					<li>
-						<a href="${pageContext.request.contextPath }/views/services/business/business.jsp">재단사업</a>
-					</li>
-					<li>
-						<a href="${pageContext.request.contextPath }/views/services/news/news.jsp">재단소식</a>
-					</li>
-					<li>
-						<a href="${pageContext.request.contextPath }/views/services/reference/reference.jsp">자료실</a>
-					</li>
-					<li>
-						<a href="${pageContext.request.contextPath }/views/services/apply/apply.jsp">신청/참여</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="gnb_right">
-				<ul class="pc_only">
-					<li>
-						<a href="${pageContext.request.contextPath }/index.jsp">
-							<img class="one" src="${pageContext.request.contextPath }/assets/images/i_home.png" alt="">
-							<img class="two" src="${pageContext.request.contextPath }/assets/images/i_home_w.png" alt="">
-						</a>
-					</li>
-					<li>|</li>
-					<li>
-						<img class="one" src="${pageContext.request.contextPath }/assets/images/i_search.png" alt="">
-						<img class="two" src="${pageContext.request.contextPath }/assets/images/i_search_w.png" alt="">
-					</li>
-				</ul>
-				<ul class="mo_only">
-					<li>
-						<div class="ico toggle-side-bar-btn menu_btn">
-							<div></div>
-							<div></div>
-							<div></div>
-						</div> 
-						<div class="menu">
-							<div class="menu_close menu_btn">
-								<img src="${pageContext.request.contextPath }/assets/images/close.png" alt="">
-							</div>
-							<div class="menu_logo">
-								<a href="${pageContext.request.contextPath }/index.jsp">
-									<img src="${pageContext.request.contextPath }/assets/images/logo.png" alt="">
-								</a>
-							</div>
-							<div class="search">
-								<input type="text" placeholder="제품을 검색해보세요.">
-								<button><img src="${pageContext.request.contextPath }/assets/images/i_search.png" alt=""></button>
-							</div>
-							<!-- <ul class="lnb"> 
-								<li><a href="${pageContext.request.contextPath }/views/services/login.jsp">로그인</a></li>
-								<li><a href="${pageContext.request.contextPath }/views/services/agree_term.jsp">회원가입</a></li>
-								<li><a href="${pageContext.request.contextPath }/views/services/my.jsp">마이페이지</a></li>
-								<li><a href="${pageContext.request.contextPath }/views/services/notice.jsp">공지사항</a></li>
-								<li><a href="${pageContext.request.contextPath }/views/services/faq.jsp">FAQ</a></li>
-								<li><a href="${pageContext.request.contextPath }/views/services/quick_reserv.jsp">예약신청</a></li>
-							</ul> -->
-				
-							<div class="menu_list">
-								<div id="Accordion_wrap">
-									<div class="que">
-										<a href="${pageContext.request.contextPath }/views/services/founder/founder_2.jsp">설립자 소개</a>
-									</div>
-									<div class="anw">
-										<span><a href="#"></a></span>
-										<span><a href="#"></a></span>
-									</div>
-									<div class="que">
-										<a href="${pageContext.request.contextPath }/views/services/foundation/foundation.jsp">재단소개</a>
-									</div>
-									<div class="anw">
-										<span><a href="#"></a></span>
-										<span><a href="#"></a></span>
-									</div>
-									<div class="que">
-										<a href="${pageContext.request.contextPath }/views/services/business/business.jsp">재단사업</a>
-									</div>
-									<div class="anw">
-										<span><a href="#"></a></span>
-										<span><a href="#"></a></span>
-									</div>
-									<div class="que">
-										<a href="${pageContext.request.contextPath }/views/services/news/news.jsp">재단소식</a>
-									</div>
-									<div class="anw">
-										<span><a href="#"></a></span>
-										<span><a href="#"></a></span>
-									</div>
-									<div class="que">
-										<a href="${pageContext.request.contextPath }/views/services/reference/reference.jsp">자료실</a>
-									</div>
-									<div class="anw">
-										<span><a href="#"></a></span>
-										<span><a href="#"></a></span>
-									</div>
-									<div class="que">
-										<a href="${pageContext.request.contextPath }/views/services/apply/apply.jsp">신청/참여</a>
-									</div>
-									<div class="anw">
-										<span><a href="#"></a></span>
-										<span><a href="#"></a></span>
-									</div>
-								  </div>
-							</div>
-						</div>						
-					</li>
-				</ul>
-			</div>
-		</div>
+		<!-- top 영역 시작 -->
+		<c:import url="${pageContext.request.contextPath }/assets/include/topbar.jsp" />
+		<!-- top 영역 끝 -->
 	</header>
-	<div class="fixed_con">
-		<ul>
-			<li>
-				<a href="${pageContext.request.contextPath }/index.jsp">
-					<i><img src="${pageContext.request.contextPath }/assets/images/i_main.png" alt=""></i>
-					<p>메인</p>
-				</a>
-			</li>
-			<li>
-				<a href="${pageContext.request.contextPath }/views/services/news/news_2.jsp">
-					<i><img src="${pageContext.request.contextPath }/assets/images/i_news.png" alt=""></i>
-					<p>뉴스레터</p>
-				</a>
-			</li>
-			<li>
-				<a href="${pageContext.request.contextPath }/views/services/apply/apply.jsp">
-					<i><img src="${pageContext.request.contextPath }/assets/images/i_apply.png" alt=""></i>
-					<p>신청·참여</p>
-				</a>
-			</li>
-			<li>
-				<a href="#page1">
-					<i><img src="${pageContext.request.contextPath }/assets/images/i_top.png" alt=""></i>
-					<p>TOP</p>
-				</a>
-			</li>
-		</ul>
-	</div>
+	
+	<!-- fix_con 영역 시작 -->
+	<c:import url="${pageContext.request.contextPath }/assets/include/fixed_con.jsp" />
+	<!-- fix_con 영역 끝 -->
+	
 	<div class="intro" id="popup_layer">
 		<div class="video-background">
 			<div class="video-foreground">
@@ -222,54 +80,13 @@
 		</a>
 	</div>
 
-<<<<<<< HEAD
-			<!-- Sidebar -->
-			<div class="sidebar">
-				<!-- Sidebar Menu -->
-				<nav class="mt-2">
-					<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-						<li class="nav-item">
-							<a href="${pageContext.request.contextPath }/admin/notice/noticeList" class="nav-link active"> <i class="far fa-circle nav-icon"></i>
-								<p>게시판 관리자</p>
-							</a>
-						</li>
-=======
 	<div id="fullpage">
 		<div class="section" id="section0">
 			<!-- Swiper -->
 			<div class="swiper visu_slide">
 				<div class="swiper-wrapper">
->>>>>>> branch 'master' of https://github.com/bumki8967/munhwa.git
 
-<<<<<<< HEAD
-						<li class="nav-item">
-							<a href="javascript:alert('준비중입니다');" class="nav-link"> <i class="far fa-circle nav-icon"></i>
-								<p>Dashboard v2</p>
-							</a>
-						</li>
-
-						<li class="nav-item">
-							<a href="javascript:alert('준비중입니다');" class="nav-link"> <i class="far fa-circle nav-icon"></i>
-								<p>Dashboard v3</p>
-							</a>
-						</li>
-					</ul>
-				</nav>
-				<!-- /.sidebar-menu -->
-			</div>
-			<!-- /.sidebar -->
-		</aside>
-
-		<!-- Content Wrapper. Contains page content -->
-		<div class="content-wrapper">
-			<!-- Content Header (Page header) -->
-			<br /><br /><br />
-			<div class="content-header">
-				<div class="container-fluid">
-					<div class="row mb-2">
-						<div class="col-sm-6">
-=======
-				<div class="swiper-slide slide1" style="background: url(${pageContext.request.contextPath }/assets/images/main1.jpg) no-repeat center center;">
+				<div class="swiper-slide slide1" style="background: url(./assets/images/main1.jpg) no-repeat center center;">
 					<div class="wrap">
 						<div class="shadow"></div>
 						<div class="slide_txt">
@@ -282,18 +99,17 @@
 								인류문화발전과 복지사회 창달에 이바지함을 <br/>
 								목적으로 합니다		
 							</h4>
-							<a href="${pageContext.request.contextPath }/views/services/foundation/foundation_3.jsp">
+							<a href="./services/foundation_3.html">
 								재단소개
 							</a>
->>>>>>> branch 'master' of https://github.com/bumki8967/munhwa.git
 						</div>
 					</div>
 				</div>
-				<div class="swiper-slide slide2" style="background: url(${pageContext.request.contextPath }/assets/images/main2.jpg) no-repeat center center;">
+				<div class="swiper-slide slide2" style="background: url(./assets/images/main2.jpg) no-repeat center center;">
 					<div class="wrap">
 						<div class="shadow"></div>
 						<div class="slide_txt">
-							<div class="ytn"><img src="${pageContext.request.contextPath }/assets/images/ytn.png" alt=""></div>
+							<div class="ytn"><img src="./assets/images/ytn.png" alt=""></div>
 							<h3>희귀잡지 2만점 보유 '가천박물관'<br/>
 								주요잡지 첫 도록(도록) 제작
 							</h3>
@@ -307,7 +123,7 @@
 						</div>	
 					</div>			
 				</div>
-				<div class="swiper-slide slide3" style="background: url(${pageContext.request.contextPath }/assets/images/main3.jpg) no-repeat center center;">
+				<div class="swiper-slide slide3" style="background: url(./assets/images/main3.jpg) no-repeat center center;">
 					<div class="wrap">
 						<div class="shadow"></div>
 						<div class="slide_txt">
@@ -319,7 +135,7 @@
 								지난 1999년부터 효를 실천하고 있는 <br/>
 								학생을 발굴, 시상하고 있습니다						
 							</h4>
-							<a href="${pageContext.request.contextPath }/views/services/business/business.jsp">
+							<a href="./services/business.html">
 								사업보기
 							</a>
 							<div class="lines">
@@ -338,7 +154,7 @@
 		<div class="section" id="section1">
 			<div class="wrap">
 				<div class="sec_top">
-					<div class="sec_box left" style="background: url(${pageContext.request.contextPath }/assets/images/sec1_left_bg.png) no-repeat right center;">
+					<div class="sec_box left" style="background: url(./assets/images/sec1_left_bg.png) no-repeat right center;">
 						<h3>
 							안녕하세요.<br/>
 							가천문화재단 설립자<br/>
@@ -348,10 +164,10 @@
 							넓디넓은 인터넷의 바다에서 이곳을<br/>
 							찾아주신 여러분을 진심으로 환영합니다.						
 						</p> -->
-						<a href="${pageContext.request.contextPath }/views/services/founder/founder.jsp">
+						<a href="./services/founder.html">
 							<div class="btn1">
 								<p>
-									<span>설립자 소개</span><i><img src="${pageContext.request.contextPath }/assets/images/i_link.png" alt=""></i>
+									<span>설립자 소개</span><i><img src="./assets/images/i_link.png" alt=""></i>
 								</p>
 							</div>
 						</a>
@@ -371,15 +187,15 @@
 												<p>
 													학술결과 28일 발표…<br/>가천박물관 창립자 이길여 총장
 												</p>
-												<a href="http://www.munhwa.com/news/view.jsp?no=2022051301032812050001" target="_blank">
+												<a href="http://www.munhwa.com/news/view.html?no=2022051301032812050001" target="_blank">
 													<div class="btn2">
 														<p>
-															<span>자세히 보기</span><i><img src="${pageContext.request.contextPath }/assets/images/i_linkB.png" alt=""></i>
+															<span>자세히 보기</span><i><img src="./assets/images/i_linkB.png" alt=""></i>
 														</p>
 													</div>
 												</a>
 											</div>
-											<div class="imgs" style="background: url(${pageContext.request.contextPath }/assets/images/news1.jpg) no-repeat center center; background-size: cover;">
+											<div class="imgs" style="background: url(./assets/images/news1.jpg) no-repeat center center; background-size: cover;">
 												
 											</div>
 										</div>
@@ -399,12 +215,12 @@
 												<a href="https://mk.co.kr/news/society/view/2022/02/178806/" target="_blank">
 													<div class="btn2">
 														<p>
-															<span>자세히 보기</span><i><img src="${pageContext.request.contextPath }/assets/images/i_linkB.png" alt=""></i>
+															<span>자세히 보기</span><i><img src="./assets/images/i_linkB.png" alt=""></i>
 														</p>
 													</div>
 												</a>
 											</div>
-											<div class="imgs" style="background: url(${pageContext.request.contextPath }/assets/images/news2.png) no-repeat center center; background-size: cover;">
+											<div class="imgs" style="background: url(./assets/images/news2.png) no-repeat center center; background-size: cover;">
 												
 											</div>
 										</div>
@@ -426,12 +242,12 @@
 												<a href="https://www.joongang.co.kr/article/25031989" target="_blank">
 													<div class="btn2">
 														<p>
-															<span>자세히 보기</span><i><img src="${pageContext.request.contextPath }/assets/images/i_linkB.png" alt=""></i>
+															<span>자세히 보기</span><i><img src="./assets/images/i_linkB.png" alt=""></i>
 														</p>
 													</div>
 												</a>
 											</div>
-											<div class="imgs" style="background: url(${pageContext.request.contextPath }/assets/images/news3.jpg) no-repeat center center; background-size: cover;">
+											<div class="imgs" style="background: url(./assets/images/news3.jpg) no-repeat center center; background-size: cover;">
 												
 											</div>
 										</div>
@@ -443,32 +259,32 @@
 					</div>
 				</div>
 				<div class="sec_bottom">
-					<div class="sec_box sec_box1" style="background: url(${pageContext.request.contextPath }/assets/images/sec1_bottom_img1.png) no-repeat center center; background-size: cover;">
+					<div class="sec_box sec_box1" style="background: url(./assets/images/sec1_bottom_img1.png) no-repeat center center; background-size: cover;">
 						<div class="bg_color"></div>
 						<div class="con">
 							<h3>가천 문화재단</h3>
 							<ul>
-								<li><a href="${pageContext.request.contextPath }/views/services/foundation/foundation.jsp">소개</a></li>
+								<li><a href="./services/foundation.html">소개</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="sec_box sec_box2" style="background: url(${pageContext.request.contextPath }/assets/images/sec1_bottom_img2.png) no-repeat center center; background-size: cover;">
+					<div class="sec_box sec_box2" style="background: url(./assets/images/sec1_bottom_img2.png) no-repeat center center; background-size: cover;">
 						<div class="bg_color"></div>
 						<div class="con">
 							<h3>가천 이길여 산부인과 기념관</h3>
 							<ul>
-								<li><a href="${pageContext.request.contextPath }/views/services/business/business_6.jsp">소개</a></li>
+								<li><a href="./services/business_6.html">소개</a></li>
 								<li><a href="http://www.gachon1958.com/" target="_blank">바로가기</a></li>
-								<li><a href="http://easyvr.co.kr/gachon2/index.jsp" target="_blank">★ VR관람</a></li>
+								<li><a href="http://easyvr.co.kr/gachon2/index.html" target="_blank">★ VR관람</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="sec_box sec_box3" style="background: url(${pageContext.request.contextPath }/assets/images/sec1_bottom_img3.png) no-repeat center center; background-size: cover;">
+					<div class="sec_box sec_box3" style="background: url(./assets/images/sec1_bottom_img3.png) no-repeat center center; background-size: cover;">
 						<div class="bg_color"></div>
 						<div class="con">
 							<h3>가천 박물관</h3>
 							<ul>
-								<li><a href="${pageContext.request.contextPath }/views/services/business/business_5.jsp ">소개</a></li>
+								<li><a href="./services/business_5.html ">소개</a></li>
 								<li><a href="http://www.gcmuseum.org/" target="_blank">바로가기</a></li>
 							</ul>
 						</div>
@@ -479,8 +295,8 @@
 		<div class="section" id="section2">
 			<div class="wrap">
 				<div class="sec_top">
-					<div class="sec_box sec_box1" style="background: url(${pageContext.request.contextPath }/assets/images/sec2_top_img1.png) no-repeat center center; background-size: cover;">
-						<a href="${pageContext.request.contextPath }/views/services/apply_3.jsp">
+					<div class="sec_box sec_box1" style="background: url(./assets/images/sec2_top_img1.png) no-repeat center center; background-size: cover;">
+						<a href="./services/apply_3.html">
 							<div class="bg_color"></div>
 							<div class="bg_shadow"></div>
 							<div class="con">
@@ -492,8 +308,8 @@
 							</div>
 						</a>
 					</div>
-					<div class="sec_box sec_box2" style="background: url(${pageContext.request.contextPath }/assets/images/sec2_top_img2.png) no-repeat center center; background-size: cover;">
-						<a href="${pageContext.request.contextPath }/views/services/apply_2.jsp">
+					<div class="sec_box sec_box2" style="background: url(./assets/images/sec2_top_img2.png) no-repeat center center; background-size: cover;">
+						<a href="./services/apply_2.html">
 							<div class="bg_color"></div>
 							<div class="bg_shadow"></div>
 							<div class="con">
@@ -505,8 +321,8 @@
 							</div>
 						</a>
 					</div>
-					<div class="sec_box sec_box3" style="background: url(${pageContext.request.contextPath }/assets/images/sec2_top_img3.png) no-repeat center center; background-size: cover;">
-						<a href="${pageContext.request.contextPath }/views/services/apply/apply.jsp">
+					<div class="sec_box sec_box3" style="background: url(./assets/images/sec2_top_img3.png) no-repeat center center; background-size: cover;">
+						<a href="./services/apply.html">
 							<div class="bg_color"></div>
 							<div class="bg_shadow"></div>
 							<div class="con">
@@ -527,18 +343,18 @@
 					<ul class="con_list">
 						<li>
 							<div class="con_img">
-								<img src="${pageContext.request.contextPath }/assets/images/sec2_bottom_img1.png" alt="">
+								<img src="./assets/images/sec2_bottom_img1.png" alt="">
 							</div>
 							<h3 class="increase">278</h3>
 							<h5>심청효대상
 								<i>
-									<img src="${pageContext.request.contextPath }/assets/images/i_info.png" alt="">
+									<img src="./assets/images/i_info.png" alt="">
 									<div class="balloon">
 										지난 1999년부터 아름다운<br/>
 										효사상을 기반으로 사회에 귀감이 되는<br/>
 										효녀를 발굴, 시상하고 있습니다
 										<div class="tail">
-											<img src="${pageContext.request.contextPath }/assets/images/i_balloon.png" alt="">
+											<img src="./assets/images/i_balloon.png" alt="">
 										</div>
 									</div>
 								</i>
@@ -548,18 +364,18 @@
 						</li>
 						<li>
 							<div class="con_img">
-								<img src="${pageContext.request.contextPath }/assets/images/sec2_bottom_img2.png" alt="">
+								<img src="./assets/images/sec2_bottom_img2.png" alt="">
 							</div>
 							<h3 class="increase">2,503</h3>
 							<h5>가천그림그리기대회
 								<i>
-									<img src="${pageContext.request.contextPath }/assets/images/i_info.png" alt="">
+									<img src="./assets/images/i_info.png" alt="">
 									<div class="balloon">
 										지난 1999년부터 아름다운<br/>
 										효사상을 기반으로 사회에 귀감이 되는<br/>
 										효녀를 발굴, 시상하고 있습니다
 										<div class="tail">
-											<img src="${pageContext.request.contextPath }/assets/images/i_balloon.png" alt="">
+											<img src="./assets/images/i_balloon.png" alt="">
 										</div>
 									</div>
 								</i>
@@ -569,18 +385,18 @@
 						</li>
 						<li>
 							<div class="con_img">
-								<img src="${pageContext.request.contextPath }/assets/images/sec2_bottom_img3.png" alt="">
+								<img src="./assets/images/sec2_bottom_img3.png" alt="">
 							</div>
 							<h3 class="increase">53,750</h3>
 							<h5>문예지원사업
 								<i>
-									<img src="${pageContext.request.contextPath }/assets/images/i_info.png" alt="">
+									<img src="./assets/images/i_info.png" alt="">
 									<div class="balloon">
 										지난 1999년부터 아름다운<br/>
 										효사상을 기반으로 사회에 귀감이 되는<br/>
 										효녀를 발굴, 시상하고 있습니다
 										<div class="tail">
-											<img src="${pageContext.request.contextPath }/assets/images/i_balloon.png" alt="">
+											<img src="./assets/images/i_balloon.png" alt="">
 										</div>
 									</div>
 								</i>
@@ -592,7 +408,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section" id="section3" style="background: url(${pageContext.request.contextPath }/assets/images/sec3_bg.png) no-repeat left">
+		<div class="section" id="section3" style="background: url(./assets/images/sec3_bg.png) no-repeat left">
 			<div class="wrap">
 				<div class="sec_head">
 					<h2>가천 소식</h2>
@@ -611,7 +427,7 @@
 										<p>경기도 성남 가천대학교가 통합 10주년을 맞아 '5년 내 국내 10대 대학,<br/>
 											10년 내 글로벌 100대 대학 도약'을 위한 비전 선포식을 열었습니다.</p>
 									</div>
-									<div class="img_con" style="background: url(${pageContext.request.contextPath }/assets/images/sec3_left_img1.png);"></div>
+									<div class="img_con" style="background: url(./assets/images/sec3_left_img1.png);"></div>
 								</a>
 
 							</li>
@@ -626,7 +442,7 @@
 										<p>출산 예정일을 닷새 앞두고 코로나19에 확진된 베트남 이주여성이<br/>
 											가천대 길병원에서 무사히 아들을 출산해 눈길을 끌고 있다.</p>
 									</div>
-									<div class="img_con" style="background: url(${pageContext.request.contextPath }/assets/images/sec3_left_img2.png);"></div>
+									<div class="img_con" style="background: url(./assets/images/sec3_left_img2.png);"></div>
 								</a>
 							</li>
 							<li>
@@ -640,7 +456,7 @@
 										<p>가천대는 학생들이 경험을 통해 배우며 사회에 기여하는 구성원으로 성장<br/>
 											할 수 있도록 교과활동 이외 다양한 비교과프로그램을 기획, 운영하고 있다.</p>
 									</div>
-									<div class="img_con" style="background: url(${pageContext.request.contextPath }/assets/images/sec3_left_img3.png);"></div>
+									<div class="img_con" style="background: url(./assets/images/sec3_left_img3.png);"></div>
 								</a>
 							</li>
 						</ul>
@@ -649,22 +465,22 @@
 						 <div class="con_top">
 							<div class="con_head">
 								<h4>공지사항</h4>
-								<a href="${pageContext.request.contextPath }/views/services/news/news.jsp"><img src="${pageContext.request.contextPath }/assets/images/i_plus.png" alt=""></a>
+								<a href="./services/news.html"><img src="./assets/images/i_plus.png" alt=""></a>
 							</div>
 							<div class="notice_list">
-								<a href="${pageContext.request.contextPath }/views/services/news/news_detail.jsp">
+								<a href="./services/news_detail.html">
 									<h5>제20회 푸른인천글쓰기대회 온라인 공모 접수 안내(~22일)</h5>
 									<p>2022. 00. 00</p>
 								</a>
 								<ul>
 									<li>
-										<a href="${pageContext.request.contextPath }/views/services/news/news_detail.jsp">
+										<a href="./services/news_detail.html">
 											<h5>2022 경인지역 문화예술 창작 온라인 공모 접수 안내(~22일)</h5>
 											<p>2022. 00. 00</p>	
 										</a>									
 									</li>
 									<li>
-										<a href="${pageContext.request.contextPath }/views/services/news/news_detail.jsp">
+										<a href="./services/news_detail.html">
 											<h5>2022년 신년사</h5>
 											<p>2022. 00. 00</p>
 										</a>								
@@ -676,19 +492,19 @@
 							<div class="letter">
 								<h4>뉴스레터</h4>
 								<div class="letter_con">
-									<img src="${pageContext.request.contextPath }/assets/images/magazine.png" alt="">
+									<img src="./assets/images/magazine.png" alt="">
 									<div class="txt">
 										<h6>New's Letter</h6>
 										<h5>제 29호</h5>
 										<p>2022.00.00</p>
-										<a href="${pageContext.request.contextPath }/views/services/news/news_2_detail.jsp">보러가기</a>
+										<a href="./services/news_2_detail.html">보러가기</a>
 									</div>
 								</div>
 							</div>
 							<div class="subscribe">
 								<h5>뉴스레터 구독</h5>
 								<a class="modal_step_open" modal_step="1">
-									<img src="${pageContext.request.contextPath }/assets/images/subscribe.png" alt="">
+									<img src="./assets/images/subscribe.png" alt="">
 								</a>
 								<p>구독 신청 시 매달 문자로<br/>
 								뉴스레터 링크를 보내드립니다.</p>
@@ -699,64 +515,11 @@
 			</div>
 		</div>
 		<div class="section fp-auto-height" id="section4">
-			<footer>
-				<div class="footer_top">
-					<div class="wrap">
-						<div class="line_hidden"></div>
-						<!-- Swiper -->
-						<div class="swiper footer_slide">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="slide_img">
-										<img src="${pageContext.request.contextPath }/assets/images/footer_img1.png" alt="">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="slide_img">
-										<img src="${pageContext.request.contextPath }/assets/images/footer_img2.png" alt="">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="slide_img">
-										<img src="${pageContext.request.contextPath }/assets/images/footer_img3.png" alt="">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="slide_img">
-										<img src="${pageContext.request.contextPath }/assets/images/footer_img4.png" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="swiper-button-next swiper-button-next3"></div>
-							<div class="swiper-button-prev swiper-button-prev3"></div>
-						</div>	
-					</div>
-				</div>
-				<div class="footer_bottom">
-					<div class="wrap">
-						<div class="left">
-							<img src="${pageContext.request.contextPath }/assets/images/footer_logo.png" alt="">
-							<ul class="list">
-								<li>인천광역시 연수구 청량로 102번길 40-9(옥련동)</li>
-								<li>|</li>
-								<li>전화번호   032)833-4168</li>
-								<li>|</li>
-								<li>팩스번호   032)833-4169</li>
-							</ul>
-							<div class="copyright">
-								Copyright (c) Gachon Cultural Foundation. All Rights Reserved 2022
-							</div>
-						</div>
-						<div class="right">
-							<select name="" id="" class="map">
-								<option value="">FAMILY SITE</option>
-								<option value="http://www.naver.com">네이버</option>
-							</select>
-						</div>
-					</div>
-				</div>
-			</footer>
-
+		    <footer>
+		        <!-- footer 시작 -->
+				<c:import url="${pageContext.request.contextPath }/assets/include/footer.jsp" />
+				<!-- // footer 끝 -->
+    		</footer> 
 		</div>
 	</div>
 
@@ -771,7 +534,7 @@
 					<div class="certiTxt">
 						<div class="modalContWrap">
 							<div class="modal_close cancerButton">
-							  <img src="${pageContext.request.contextPath }/assets/images/close.png" alt="모달 닫기버튼">
+							  <img src="./assets/images/close.png" alt="모달 닫기버튼">
 							</div>   
 							<div class="modal_con">
 							  <div class="head">
@@ -783,7 +546,7 @@
 									</p>
 								</div>
 								<div class="right">
-									<img src="${pageContext.request.contextPath }/assets/images/letter.png" alt="">
+									<img src="./assets/images/letter.png" alt="">
 								</div>
 							  </div>
 							  <div class="modal_form">
@@ -988,35 +751,35 @@
 </script>
 
 
-<script>
-     // 쿠키 생성
-     function setCookie( name, value, expiredays ) {  // 쿠키저장
-         var todayDate = new Date();  //date객체 생성 후 변수에 저장
-         todayDate.setDate( todayDate.getDate() + expiredays ); 
-         // 시간지정(현재시간 + 지정시간)
-         document.cookie = name + "=" + value + "; path=/; expires=" + todayDate.toUTCString() + ";"
-         //위 정보를 쿠키에 굽는다
-     } 
+    <script>
+        // 쿠키 생성
+        function setCookie( name, value, expiredays ) {  // 쿠키저장
+            var todayDate = new Date();  //date객체 생성 후 변수에 저장
+            todayDate.setDate( todayDate.getDate() + expiredays ); 
+            // 시간지정(현재시간 + 지정시간)
+            document.cookie = name + "=" + value + "; path=/; expires=" + todayDate.toUTCString() + ";"
+            //위 정보를 쿠키에 굽는다
+        } 
 
 
-     $(function(){
-         // $(".popup_box").draggable({containment:'parent', scroll:false}); // 레이어 팝업 창 드래그 가능
-         //{containment:'parent', scroll:false} 화면 영역 밖으로 드래그 안됌.
-                     
-		if(document.cookie.indexOf("popToday=close") < 0 ){      // 쿠키 저장여부 체크
-        	document.getElementById("popup_layer").style.display = "block";
-        } else {
-            document.getElementById("popup_layer").style.display = "none"; 
-			$('body').off('scroll touchmove mousewheel');	//마우스 스크롤 잠금 해제
+        $(function(){
+            // $(".popup_box").draggable({containment:'parent', scroll:false}); // 레이어 팝업 창 드래그 가능
+            //{containment:'parent', scroll:false} 화면 영역 밖으로 드래그 안됌.
+                        
+            if(document.cookie.indexOf("popToday=close") < 0 ){      // 쿠키 저장여부 체크
+                document.getElementById("popup_layer").style.display = "block";
+                }else {
+                document.getElementById("popup_layer").style.display = "none"; 
+				$('body').off('scroll touchmove mousewheel');	//마우스 스크롤 잠금 해제
+                }
+            });
+                    
+        //오늘하루만보기 닫기버튼 스크립트
+        function closeToday() { 
+            setCookie( "popToday", "close" , 1  ); 
+            $("#popup_layer").css("display", "none");
+            document.getElementById("popup_layer").style.display = "none";	//마우스 스크롤 잠금 해제
+			$('body').off('scroll touchmove mousewheel');
         }
-     });
-                 
-     //오늘하루만보기 닫기버튼 스크립트
-     function closeToday() { 
-        setCookie( "popToday", "close" , 1  ); 
-        $("#popup_layer").css("display", "none");
-        document.getElementById("popup_layer").style.display = "none";	//마우스 스크롤 잠금 해제
-		$('body').off('scroll touchmove mousewheel');
-     }
- 
- </script>
+    
+    </script>
